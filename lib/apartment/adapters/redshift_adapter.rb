@@ -90,7 +90,7 @@ module Apartment
     end
 
     # Another Adapter for Postgresql when using schemas and SQL
-    class RedshiftSchemaFromSqlAdapter < PostgresqlSchemaAdapter
+    class RedshiftSchemaFromSqlAdapter < RedshiftSchemaAdapter
 
       PSQL_DUMP_BLACKLISTED_STATEMENTS= [
         /SET search_path/i,   # overridden later
